@@ -1,1 +1,222 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DartScorer – Dein digitales Dart-Scoreboard für iOS und Android. X01, Cricket, Shanghai und mehr.">
+    <meta name="keywords" content="DartScorer, Dart, Scoreboard, X01, 501, Cricket, Shanghai, iOS, Android">
+    <meta name="author" content="Moritz Karrasch">
 
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://moritz-karrasch.github.io/dart-scorer/">
+    <meta property="og:title" content="DartScorer – Dein Dart-Scoreboard">
+    <meta property="og:description" content="DartScorer – die moderne Dart-Scoreboard-App für verschiedene Spielmodi. Jetzt für iOS und Android.">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://moritz-karrasch.github.io/dart-scorer/">
+    <meta property="twitter:title" content="DartScorer – Dein Dart-Scoreboard">
+    <meta property="twitter:description" content="DartScorer – die moderne Dart-Scoreboard-App für verschiedene Spielmodi. Jetzt für iOS und Android.">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../dart-scorer-icon.png">
+
+    <title>DartScorer – Dein Dart-Scoreboard</title>
+    <link rel="stylesheet" href="../assets/css/site.css">
+</head>
+<body class="app-dartscorer">
+    <header>
+        <div class="container">
+            <a href="../" class="logo">
+                <img src="../dart-scorer-icon.png" alt="DartScorer App Icon" class="logo-icon" width="36" height="36">
+                <h1>DartScorer</h1>
+            </a>
+            <nav>
+                <a href="../">Alle Apps</a>
+                <a href="#features">Features</a>
+                <a href="#game-modes">Spielmodi</a>
+                <a href="#download">Download</a>
+                <a href="support.html">Support</a>
+                <a href="privacy.html">Datenschutz</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h2>Dein digitales Dart-Scoreboard</h2>
+                <p class="subtitle">DartScorer hilft dir, Dartspiele einfach und übersichtlich zu zählen. Mit 9 Spielmodi, Computergegnern, Checkout-Vorschlägen und detaillierten Statistiken.</p>
+                <div class="cta-buttons">
+                    <!-- TODO: App-Store-Links ergänzen, sobald die App veröffentlicht ist -->
+                    <a href="#download" class="btn btn-primary">Jetzt herunterladen</a>
+                    <a href="#features" class="btn btn-secondary">Mehr erfahren</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="features-section">
+            <div class="container">
+                <h2>Features</h2>
+                <div class="feature-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎯</div>
+                        <h3>9 Spielmodi</h3>
+                        <p>X01, Cricket, Shanghai, Around the Clock, HalveIt, Shooter, Elimination und Highscore.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🤖</div>
+                        <h3>Computer-Gegner</h3>
+                        <p>Spiele alleine gegen KI-Gegner mit 5 Schwierigkeitsstufen – von Anfänger bis Profi.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🧮</div>
+                        <h3>Checkout-Vorschläge</h3>
+                        <p>Im X01-Modus zeigt dir die App in Echtzeit die besten Wege zum Checkout an.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📊</div>
+                        <h3>Spielstatistiken</h3>
+                        <p>Verfolge deine Leistung mit detaillierten Statistiken für jeden Spielmodus.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>Spielerprofile</h3>
+                        <p>Erstelle Profile für alle Mitspieler und verwalte ihre Statistiken über mehrere Spiele.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌙</div>
+                        <h3>Themes & Sound</h3>
+                        <p>Mehrere Designs inklusive Dark Mode und Tavern-Optik. Inklusive Sound-Effekte und haptischem Feedback.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="game-modes" class="game-modes">
+            <div class="container">
+                <h2>Spielmodi</h2>
+                <div class="mode-grid">
+                    <div class="mode-card">
+                        <div class="mode-icon">🎯</div>
+                        <h3>X01</h3>
+                        <p>301, 501, 701, 901 – mit konfigurierbaren Check-In/Check-Out-Regeln, Sets & Legs.</p>
+                    </div>
+                    <div class="mode-card">
+                        <div class="mode-icon">🏏</div>
+                        <h3>Cricket</h3>
+                        <p>Markiere die Zahlen 15–20 und Bull, um Punkte zu sammeln.</p>
+                    </div>
+                    <div class="mode-card">
+                        <div class="mode-icon">🕐</div>
+                        <h3>Around the Clock</h3>
+                        <p>Triff jede Zahl von 1 bis 20 der Reihe nach und schließe mit dem Bull ab.</p>
+                    </div>
+                    <div class="mode-card">
+                        <div class="mode-icon">🀄</div>
+                        <h3>Shanghai</h3>
+                        <p>Pro Runde zählt nur eine Zahl – erziele die höchste Gesamtpunktzahl.</p>
+                    </div>
+                    <div class="mode-card">
+                        <div class="mode-icon">✂️</div>
+                        <h3>HalveIt / Splitscore</h3>
+                        <p>Triff die vorgegebenen Ziele – oder dein Punktestand wird halbiert.</p>
+                    </div>
+                    <div class="mode-card">
+                        <div class="mode-icon">🎳</div>
+                        <h3>Shooter</h3>
+                        <p>Punkteduell auf einzelne Zielzahlen – wer trifft besser?</p>
+                    </div>
+                    <div class="mode-card">
+                        <div class="mode-icon">💥</div>
+                        <h3>Elimination</h3>
+                        <p>Wer das Ziel verfehlt, fliegt raus – runden- oder wurfbasiert.</p>
+                    </div>
+                    <div class="mode-card">
+                        <div class="mode-icon">🏆</div>
+                        <h3>Highscore</h3>
+                        <p>Freies Scoring – erziele die höchste Gesamtpunktzahl.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="steps-section">
+            <div class="container">
+                <h2>So funktioniert's</h2>
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Spielmodus wählen</h3>
+                        <p>Wähle aus 9 verschiedenen Dart-Spielmodi deinen Favoriten.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Spieler hinzufügen</h3>
+                        <p>Erstelle Spielerprofile oder füge Computer-Gegner hinzu.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Spiel konfigurieren</h3>
+                        <p>Passe Regeln, Sets, Legs und Spieloptionen nach Wunsch an.</p>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>Spielen & Tracken</h3>
+                        <p>Gib deine Würfe ein und lass die App den Rest erledigen.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="download-section">
+            <div class="container">
+                <h2>Jetzt herunterladen</h2>
+                <p>DartScorer ist verfügbar für iOS und Android.</p>
+                <div class="download-buttons">
+                    <!-- TODO: App-Store-Link ergänzen, sobald veröffentlicht -->
+                    <a href="https://apps.apple.com/app/dartscorer/id0000000000" class="store-badge" target="_blank" rel="noopener" aria-label="Download on the App Store">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='40' viewBox='0 0 120 40'%3E%3Crect fill='%23000' width='120' height='40' rx='5'/%3E%3Ctext x='60' y='24' font-family='Arial' font-size='10' fill='%23fff' text-anchor='middle'%3EApp Store%3C/text%3E%3C/svg%3E" alt="Download on the App Store">
+                    </a>
+                    <!-- TODO: Play-Store-Link ergänzen, sobald veröffentlicht -->
+                    <a href="https://play.google.com/store/apps/details?id=de.ml.dartscorer" class="store-badge" target="_blank" rel="noopener" aria-label="Get it on Google Play">
+                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='135' height='40' viewBox='0 0 135 40'%3E%3Crect fill='%23000' width='135' height='40' rx='5'/%3E%3Ctext x='67' y='24' font-family='Arial' font-size='10' fill='%23fff' text-anchor='middle'%3EGoogle Play%3C/text%3E%3C/svg%3E" alt="Get it on Google Play">
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="support" class="support-section">
+            <div class="container">
+                <h2>Support & Kontakt</h2>
+                <p>Hast du Fragen, Feedback oder technische Probleme? Wir helfen gerne weiter!</p>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <p>E-Mail: <a href="mailto:leinpinselm@gmail.com">leinpinselm@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="support-links">
+                    <a href="support.html" class="support-link">Support-Seite</a>
+                    <a href="privacy.html" class="support-link">Datenschutzerklärung</a>
+                    <a href="terms.html" class="support-link">Nutzungsbedingungen</a>
+                    <a href="../imprint.html" class="support-link">Impressum</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Moritz Karrasch – DartScorer. Alle Rechte vorbehalten.</p>
+            <nav class="footer-nav">
+                <a href="../">Alle Apps</a>
+                <a href="privacy.html">Datenschutz</a>
+                <a href="terms.html">Nutzungsbedingungen</a>
+                <a href="../imprint.html">Impressum</a>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
