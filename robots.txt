@@ -2,3 +2,7 @@ User-agent: *
 Allow: /
 
 Sitemap: https://moritz-karrasch.github.io/sitemap.xml
+
+# Old redirect pages should not be indexed
+Disallow: /privacy.html
+Disallow: /terms.html
