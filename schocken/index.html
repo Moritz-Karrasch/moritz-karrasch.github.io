@@ -35,15 +35,20 @@
         <div class="container">
             <a href="../" class="logo">
                 <img src="../schocken-icon.png" alt="Schocken App Icon" class="logo-icon" width="36" height="36">
-                <h1>Schocken – Das Würfelspiel</h1>
+                <h1 data-i18n="sc.h1">Schocken – Das Würfelspiel</h1>
             </a>
             <nav>
-                <a href="../">Alle Apps</a>
-                <a href="#features">Features</a>
-                <a href="#download">Download</a>
-                <a href="support.html">Support</a>
-                <a href="privacy.html">Datenschutz</a>
-                <a href="terms.html">Nutzungsbedingungen</a>
+                <a href="../" data-i18n="nav.allApps">Alle Apps</a>
+                <a href="#features" data-i18n="nav.features">Features</a>
+                <a href="#download" data-i18n="nav.download">Download</a>
+                <a href="support.html" data-i18n="nav.support">Support</a>
+                <a href="privacy.html" data-i18n="nav.privacy">Datenschutz</a>
+                <a href="terms.html" data-i18n="nav.terms">Nutzungsbedingungen</a>
+                <div class="lang-toggle">
+                    <button class="lang-btn" data-lang="de">DE</button>
+                    <span class="lang-sep">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
             </nav>
         </div>
     </header>
@@ -51,12 +56,12 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h2>Das klassische Kneipen-Würfelspiel</h2>
-                <p class="subtitle">Schock aus, Jule, Straße – erlebe Schocken wie am Stammtisch. Spiele gegen Freunde,
+                <h2 data-i18n="sc.hero.h2">Das klassische Kneipen-Würfelspiel</h2>
+                <p class="subtitle" data-i18n="sc.hero.subtitle">Schock aus, Jule, Straße – erlebe Schocken wie am Stammtisch. Spiele gegen Freunde,
                     Familie oder Computer-Gegner, offline am selben Gerät oder online per Join-Code.</p>
                 <div class="cta-buttons">
-                    <a href="#download" class="btn btn-primary">Jetzt herunterladen</a>
-                    <a href="#features" class="btn btn-secondary">Mehr erfahren</a>
+                    <a href="#download" class="btn btn-primary" data-i18n="btn.downloadNow">Jetzt herunterladen</a>
+                    <a href="#features" class="btn btn-secondary" data-i18n="btn.learnMore">Mehr erfahren</a>
                 </div>
             </div>
         </section>
@@ -107,27 +112,27 @@
 
         <section class="steps-section">
             <div class="container">
-                <h2>So funktioniert's</h2>
+                <h2 data-i18n="sc.steps.h2">So funktioniert's</h2>
                 <div class="steps">
                     <div class="step">
                         <div class="step-number">1</div>
-                        <h3>Spieler hinzufügen</h3>
-                        <p>Erstelle Profile für alle Mitspieler oder füge Computer-Gegner hinzu.</p>
+                        <h3 data-i18n="sc.s1.h3">Spieler hinzufügen</h3>
+                        <p data-i18n="sc.s1.p">Erstelle Profile für alle Mitspieler oder füge Computer-Gegner hinzu.</p>
                     </div>
                     <div class="step">
                         <div class="step-number">2</div>
-                        <h3>Augen auf</h3>
-                        <p>Alle würfeln einmal – der beste Wurf beginnt das Spiel.</p>
+                        <h3 data-i18n="sc.s2.h3">Augen auf</h3>
+                        <p data-i18n="sc.s2.p">Alle würfeln einmal – der beste Wurf beginnt das Spiel.</p>
                     </div>
                     <div class="step">
                         <div class="step-number">3</div>
-                        <h3>Schocks jagen</h3>
-                        <p>Bis zu drei Würfe pro Zug – wer den schlechtesten Wurf hat, kassiert die Deckel.</p>
+                        <h3 data-i18n="sc.s3.h3">Schocks jagen</h3>
+                        <p data-i18n="sc.s3.p">Bis zu drei Würfe pro Zug – wer den schlechtesten Wurf hat, kassiert die Deckel.</p>
                     </div>
                     <div class="step">
                         <div class="step-number">4</div>
-                        <h3>Finale</h3>
-                        <p>Wer beide Hälften verliert, hat verloren – sonst entscheidet das Finale!</p>
+                        <h3 data-i18n="sc.s4.h3">Finale</h3>
+                        <p data-i18n="sc.s4.p">Wer beide Hälften verliert, hat verloren – sonst entscheidet das Finale!</p>
                     </div>
                 </div>
             </div>
@@ -135,13 +140,12 @@
 
         <section id="download" class="download-section">
             <div class="container">
-                <h2>Jetzt herunterladen</h2>
-                <p>Schocken ist verfügbar für Android – die iOS-Version folgt in Kürze.</p>
+                <h2 data-i18n="sc.download.h2">Jetzt herunterladen</h2>
+                <p data-i18n="sc.download.p">Schocken ist verfügbar für Android – die iOS-Version folgt in Kürze.</p>
                 <div class="download-buttons">
-                    <a href="https://play.google.com/store/apps/details?id=de.ml.shock" class="store-badge"
-                        target="_blank" rel="noopener" aria-label="Get it on Google Play">
-                        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='135' height='40' viewBox='0 0 135 40'%3E%3Crect fill='%23000' width='135' height='40' rx='5'/%3E%3Ctext x='67' y='24' font-family='Arial' font-size='10' fill='%23fff' text-anchor='middle'%3EGoogle Play%3C/text%3E%3C/svg%3E"
-                            alt="Get it on Google Play">
+                    <a href="https://play.google.com/store/apps/details?id=de.ml.shock"
+                        class="btn btn-primary" target="_blank" rel="noopener" data-i18n="btn.googlePlay">
+                        Google Play
                     </a>
                 </div>
             </div>
@@ -149,19 +153,19 @@
 
         <section id="support" class="support-section">
             <div class="container">
-                <h2>Support & Kontakt</h2>
-                <p>Hast du Fragen, Feedback oder technische Probleme? Wir helfen gerne weiter!</p>
+                <h2 data-i18n="sc.support.h2">Support & Kontakt</h2>
+                <p data-i18n="support.intro">Hast du Fragen, Feedback oder technische Probleme? Wir helfen gerne weiter!</p>
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">📧</div>
-                        <p>E-Mail: <a href="mailto:leinpinselm@gmail.com">leinpinselm@gmail.com</a></p>
+                        <p><span data-i18n="support.email">E-Mail:</span> <a href="mailto:leinpinselm@gmail.com">leinpinselm@gmail.com</a></p>
                     </div>
                 </div>
                 <div class="support-links">
-                    <a href="support.html" class="support-link">Support-Seite</a>
-                    <a href="privacy.html" class="support-link">Datenschutzerklärung</a>
-                    <a href="terms.html" class="support-link">Nutzungsbedingungen</a>
-                    <a href="../imprint.html" class="support-link">Impressum</a>
+                    <a href="support.html" class="support-link" data-i18n="support.link">Support-Seite</a>
+                    <a href="privacy.html" class="support-link" data-i18n="support.privacy">Datenschutzerklärung</a>
+                    <a href="terms.html" class="support-link" data-i18n="support.terms">Nutzungsbedingungen</a>
+                    <a href="../imprint.html" class="support-link" data-i18n="support.imprint">Impressum</a>
                 </div>
             </div>
         </section>
@@ -169,15 +173,16 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Moritz Karrasch – Schocken Das Würfelspiel. Alle Rechte vorbehalten.</p>
+            <p data-i18n="sc.footer">&copy; 2026 Moritz Karrasch – Schocken Das Würfelspiel. Alle Rechte vorbehalten.</p>
             <nav class="footer-nav">
-                <a href="../">Alle Apps</a>
-                <a href="privacy.html">Datenschutz</a>
-                <a href="terms.html">Nutzungsbedingungen</a>
-                <a href="../imprint.html">Impressum</a>
+                <a href="../" data-i18n="nav.allApps">Alle Apps</a>
+                <a href="privacy.html" data-i18n="nav.privacy">Datenschutz</a>
+                <a href="terms.html" data-i18n="nav.terms">Nutzungsbedingungen</a>
+                <a href="../imprint.html" data-i18n="nav.imprint">Impressum</a>
             </nav>
         </div>
     </footer>
+    <script src="../assets/js/i18n.js" defer></script>
 </body>
 
 </html>

@@ -58,15 +58,6 @@
     --app-shadow:    rgba(212, 160, 84, 0.4);
 }
 
-/* DartScorer accent overrides */
-.app-dartscorer {
-    --app-accent:           #5CB85C;
-    --app-accent-dark:      #4A9A4A;
-    --app-accent-secondary: #8FBF4A;
-    --app-gradient:  linear-gradient(135deg, #5CB85C, #8FBF4A);
-    --app-shadow:    rgba(92, 184, 92, 0.4);
-}
-
 /* ============================================
    Base Styles
    ============================================ */
@@ -176,6 +167,7 @@ header .container {
     max-height: 36px;
     border-radius: var(--radius-sm);
     object-fit: contain;
+    mix-blend-mode: screen;
 }
 
 .logo h1 {
@@ -201,6 +193,44 @@ nav a {
 
 nav a:hover {
     color: var(--text-primary);
+}
+
+/* Language toggle */
+.lang-toggle {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    margin-left: var(--spacing-sm);
+    border-left: 1px solid var(--border-subtle);
+    padding-left: var(--spacing-sm);
+}
+
+.lang-btn {
+    background: none;
+    border: none;
+    color: var(--text-muted);
+    font-family: inherit;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    padding: 2px 5px;
+    border-radius: var(--radius-sm);
+    transition: color var(--transition-fast);
+}
+
+.lang-btn:hover {
+    color: var(--text-primary);
+}
+
+.lang-btn.active {
+    color: var(--app-accent);
+}
+
+.lang-sep {
+    color: var(--border-subtle);
+    font-size: 0.75rem;
+    user-select: none;
 }
 
 /* ============================================
@@ -307,13 +337,13 @@ nav a:hover {
 }
 
 .app-card.card-dartscorer:hover {
-    border-color: #5CB85C;
-    box-shadow: 0 12px 40px rgba(92, 184, 92, 0.2);
+    border-color: #D4A054;
+    box-shadow: 0 12px 40px rgba(212, 160, 84, 0.2);
 }
 
 .app-card.card-schocken:hover {
-    border-color: #FFD700;
-    box-shadow: 0 12px 40px rgba(255, 215, 0, 0.2);
+    border-color: #D4A054;
+    box-shadow: 0 12px 40px rgba(212, 160, 84, 0.2);
 }
 
 .app-card-icon {
@@ -322,6 +352,7 @@ nav a:hover {
     border-radius: var(--radius-lg);
     object-fit: contain;
     margin-bottom: var(--spacing-md);
+    mix-blend-mode: screen;
 }
 
 .app-card h3 {
@@ -364,7 +395,7 @@ nav a:hover {
 }
 
 .card-dartscorer .app-card-features li::before {
-    color: #5CB85C;
+    color: var(--color-accent-green);
 }
 
 .app-card .btn {
@@ -380,15 +411,15 @@ nav a:hover {
 }
 
 .card-dartscorer .btn-primary {
-    background: linear-gradient(135deg, #5CB85C, #4A9A4A);
+    background: linear-gradient(135deg, #D4A054, #C47832);
     color: #1A0E08;
-    box-shadow: 0 4px 20px rgba(92, 184, 92, 0.4);
+    box-shadow: 0 4px 20px rgba(212, 160, 84, 0.4);
 }
 
 .card-schocken .btn-primary {
-    background: linear-gradient(135deg, #FFD700, #E5A800);
+    background: linear-gradient(135deg, #D4A054, #C47832);
     color: #1A0E08;
-    box-shadow: 0 4px 20px rgba(255, 215, 0, 0.4);
+    box-shadow: 0 4px 20px rgba(212, 160, 84, 0.4);
 }
 
 /* ============================================
@@ -576,11 +607,6 @@ nav a:hover {
 
 .store-badge:hover {
     transform: scale(1.05);
-}
-
-.store-badge img {
-    height: 50px;
-    width: auto;
 }
 
 /* ============================================

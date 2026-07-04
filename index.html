@@ -35,13 +35,18 @@
     <header>
         <div class="container">
             <div class="logo">
-                <h1>Apps von Moritz Karrasch</h1>
+                <h1 data-i18n="index.h1">Apps von Moritz Karrasch</h1>
             </div>
             <nav>
-                <a href="fiftyfour/">54</a>
-                <a href="dart-scorer/">DartScorer</a>
-                <a href="schocken/">Schocken</a>
-                <a href="imprint.html">Impressum</a>
+                <a href="fiftyfour/" data-i18n="nav.54">54</a>
+                <a href="dart-scorer/" data-i18n="nav.dartscorer">DartScorer</a>
+                <a href="schocken/" data-i18n="nav.schocken">Schocken</a>
+                <a href="imprint.html" data-i18n="nav.imprint">Impressum</a>
+                <div class="lang-toggle">
+                    <button class="lang-btn" data-lang="de">DE</button>
+                    <span class="lang-sep">|</span>
+                    <button class="lang-btn" data-lang="en">EN</button>
+                </div>
             </nav>
         </div>
     </header>
@@ -49,8 +54,8 @@
     <main>
         <section class="hero">
             <div class="container">
-                <h2>Spiele-Apps für iOS & Android</h2>
-                <p class="subtitle">Entdecke hochwertige Apps – entwickelt mit Leidenschaft für ein tolles
+                <h2 data-i18n="index.hero.h2">Spiele-Apps für iOS & Android</h2>
+                <p class="subtitle" data-i18n="index.hero.subtitle">Entdecke hochwertige Apps – entwickelt mit Leidenschaft für ein tolles
                     Spielerlebnis.</p>
             </div>
         </section>
@@ -61,30 +66,30 @@
                     <!-- FiftyFour Card -->
                     <div class="app-card card-fiftyfour">
                         <img src="icon.png" alt="54 App Icon" class="app-card-icon" width="80" height="80">
-                        <h3>54 – Das Würfelspiel</h3>
-                        <p class="app-card-claim">Das klassische Würfelspiel für unterwegs</p>
+                        <h3 data-i18n="ff.card.h3">54 – Das Würfelspiel</h3>
+                        <p class="app-card-claim" data-i18n="ff.card.claim">Das klassische Würfelspiel für unterwegs</p>
                         <ul class="app-card-features">
-                            <li>Lokaler & Online-Multiplayer</li>
-                            <li>Computer-Gegner mit 5 Schwierigkeitsstufen</li>
-                            <li>Spielerprofile & Statistiken</li>
-                            <li>Verschiedene Themes & Würfelfarben</li>
+                            <li data-i18n="ff.card.f1">Lokaler & Online-Multiplayer</li>
+                            <li data-i18n="ff.card.f2">Computer-Gegner mit 5 Schwierigkeitsstufen</li>
+                            <li data-i18n="ff.card.f3">Spielerprofile & Statistiken</li>
+                            <li data-i18n="ff.card.f4">Verschiedene Themes & Würfelfarben</li>
                         </ul>
-                        <a href="fiftyfour/" class="btn btn-primary">Zur App-Seite</a>
+                        <a href="fiftyfour/" class="btn btn-primary" data-i18n="btn.toAppPage">Zur App-Seite</a>
                     </div>
 
                     <!-- DartScorer Card -->
                     <div class="app-card card-dartscorer">
                         <img src="dart-scorer-icon.png" alt="DartScorer App Icon" class="app-card-icon" width="80"
                             height="80">
-                        <h3>DartScorer</h3>
-                        <p class="app-card-claim">Dein digitales Dart-Scoreboard</p>
+                        <h3 data-i18n="ds.card.h3">DartScorer</h3>
+                        <p class="app-card-claim" data-i18n="ds.card.claim">Dein digitales Dart-Scoreboard</p>
                         <ul class="app-card-features">
-                            <li>9 Spielmodi: X01, Cricket, Shanghai u.v.m.</li>
-                            <li>Computer-Gegner mit 5 Schwierigkeitsstufen</li>
-                            <li>Checkout-Vorschläge & Spielstatistiken</li>
-                            <li>Verschiedene Themes & Sound-Effekte</li>
+                            <li data-i18n="ds.card.f1">9 Spielmodi: X01, Cricket, Shanghai u.v.m.</li>
+                            <li data-i18n="ds.card.f2">Computer-Gegner mit 5 Schwierigkeitsstufen</li>
+                            <li data-i18n="ds.card.f3">Checkout-Vorschläge & Spielstatistiken</li>
+                            <li data-i18n="ds.card.f4">Verschiedene Themes & Sound-Effekte</li>
                         </ul>
-                        <a href="dart-scorer/" class="btn btn-primary">Zur App-Seite</a>
+                        <a href="dart-scorer/" class="btn btn-primary" data-i18n="btn.toAppPage">Zur App-Seite</a>
                     </div>
 
                     <!-- Schocken Card -->
@@ -108,15 +113,16 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Moritz Karrasch. Alle Rechte vorbehalten.</p>
+            <p data-i18n="index.footer">&copy; 2026 Moritz Karrasch. Alle Rechte vorbehalten.</p>
             <nav class="footer-nav">
-                <a href="fiftyfour/">54</a>
-                <a href="dart-scorer/">DartScorer</a>
-                <a href="schocken/">Schocken</a>
-                <a href="imprint.html">Impressum</a>
+                <a href="fiftyfour/" data-i18n="nav.54">54</a>
+                <a href="dart-scorer/" data-i18n="nav.dartscorer">DartScorer</a>
+                <a href="schocken/" data-i18n="nav.schocken">Schocken</a>
+                <a href="imprint.html" data-i18n="nav.imprint">Impressum</a>
             </nav>
         </div>
     </footer>
+    <script src="assets/js/i18n.js" defer></script>
 </body>
 
 </html>
